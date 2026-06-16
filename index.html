@@ -1,181 +1,243 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Naina - Welcome</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
-            color: #333;
-        }
-        
-        header {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            padding: 2rem;
-            text-align: center;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-        }
-        
-        header h1 {
-            font-size: 3rem;
-            margin-bottom: 0.5rem;
-        }
-        
-        header p {
-            font-size: 1.2rem;
-            opacity: 0.9;
-        }
-        
-        nav {
-            background: #333;
-            padding: 1rem;
-            text-align: center;
-        }
-        
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin: 0 1.5rem;
-            transition: color 0.3s;
-        }
-        
-        nav a:hover {
-            color: #667eea;
-        }
-        
-        .container {
-            max-width: 1000px;
-            margin: 0 auto;
-            padding: 2rem;
-        }
-        
-        .hero {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            padding: 3rem;
-            border-radius: 10px;
-            margin: 2rem 0;
-            text-align: center;
-        }
-        
-        .hero h2 {
-            font-size: 2.5rem;
-            margin-bottom: 1rem;
-        }
-        
-        .features {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 2rem;
-            margin: 3rem 0;
-        }
-        
-        .feature-card {
-            background: white;
-            padding: 2rem;
-            border-radius: 10px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-            text-align: center;
-            transition: transform 0.3s;
-        }
-        
-        .feature-card:hover {
-            transform: translateY(-5px);
-        }
-        
-        .feature-card h3 {
-            color: #667eea;
-            margin-bottom: 1rem;
-        }
-        
-        footer {
-            background: #333;
-            color: white;
-            text-align: center;
-            padding: 2rem;
-            margin-top: 3rem;
-        }
-        
-        .btn {
-            display: inline-block;
-            background: #667eea;
-            color: white;
-            padding: 0.8rem 2rem;
-            border-radius: 5px;
-            text-decoration: none;
-            transition: background 0.3s;
-            margin: 0.5rem;
-        }
-        
-        .btn:hover {
-            background: #764ba2;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <title>Happiest Birthday Naina 🎉</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Cursive', sans-serif;
+      background: linear-gradient(to top, #f0f8ff, #87ceeb);
+      text-align: center;
+      overflow-x: hidden;
+    }
+    h1 { margin-top: 40px; font-size: 3em; color: #333; }
+    .section {
+      margin: 40px auto;
+      max-width: 800px;
+      background: rgba(255,255,255,0.9);
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    }
+    input, button {
+      padding: 10px; margin: 10px;
+      border-radius: 5px; border: 1px solid #ccc;
+    }
+    #celebration {
+      display: none; position: fixed; top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0,0,0,0.8); color: #fff;
+      font-size: 2em; text-align: center;
+      padding-top: 20%; z-index: 9999;
+    }
+    .balloon {
+      position: absolute; bottom: -100px;
+      width: 50px; height: 70px;
+      border-radius: 50%;
+      animation: float 6s infinite ease-in-out;
+    }
+    @keyframes float {
+      0% { transform: translateY(0); }
+      100% { transform: translateY(-120vh); }
+    }
+    .letter { font-size: 1.2em; line-height: 1.6em; text-align: left; }
+    #slideshow img {
+      width: 300px; border-radius: 15px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.3);
+      animation: fade 1s ease-in-out;
+    }
+    @keyframes fade {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <h1>🌟 Naina</h1>
-        <p>Your Creative Project Hub</p>
-    </header>
-    
-    <nav>
-        <a href="#features">Features</a>
-        <a href="#about">About</a>
-        <a href="https://github.com/thaherkhan33/naina">GitHub</a>
-        <a href="#contact">Contact</a>
-    </nav>
-    
-    <div class="container">
-        <div class="hero">
-            <h2>Welcome to Naina</h2>
-            <p>Build, Create, and Deploy Amazing Projects</p>
-            <a href="https://github.com/thaherkhan33/naina" class="btn">View on GitHub</a>
-        </div>
-        
-        <section id="features">
-            <h2 style="text-align: center; margin: 2rem 0; color: #333;">✨ Features</h2>
-            <div class="features">
-                <div class="feature-card">
-                    <h3>🚀 Fast</h3>
-                    <p>Lightning-fast performance and quick deployment</p>
-                </div>
-                <div class="feature-card">
-                    <h3>🔧 Flexible</h3>
-                    <p>Easily customizable and extensible architecture</p>
-                </div>
-                <div class="feature-card">
-                    <h3>📱 Responsive</h3>
-                    <p>Works perfectly on all devices and screen sizes</p>
-                </div>
-                <div class="feature-card">
-                    <h3>🎨 Beautiful</h3>
-                    <p>Modern design with stunning visual appeal</p>
-                </div>
-            </div>
-        </section>
-        
-        <section id="about" style="background: #f5f5f5; padding: 2rem; border-radius: 10px; margin: 2rem 0;">
-            <h2>About Naina</h2>
-            <p>Naina is a modern project repository designed to bring your ideas to life. Whether you're building a web application, creating documentation, or sharing your portfolio, Naina provides the tools and structure you need to succeed.</p>
-        </section>
+  <h1>🎂 Happiest Birthday Naina 🎂</h1>
+
+  <!-- Letter -->
+  <div class="section">
+    <h2>💌 A Special Letter</h2>
+    <div class="letter">
+      My dearest Naina,<br><br>
+      On this beautiful day, I just want to remind you how much you mean to me.  
+      You bring joy, laughter, and love into my life every single moment.  
+      May your birthday be filled with happiness, surprises, and endless smiles.  
+      You are my sunshine, my cloud, and my sky — always.<br><br>
+      With love,<br>
+      Yours forever 💖
     </div>
-    
-    <footer>
-        <p>&copy; 2026 Naina Project | Created by <a href="https://github.com/thaherkhan33" style="color: #667eea;">thaherkhan33</a></p>
-        <p>
-            <a href="https://github.com/thaherkhan33/naina" style="color: #667eea; text-decoration: none;">GitHub Repository</a> | 
-            <a href="https://github.com/thaherkhan33/naina/issues" style="color: #667eea; text-decoration: none;">Issues</a> | 
-            <a href="https://github.com/thaherkhan33/naina/pulls" style="color: #667eea; text-decoration: none;">Pull Requests</a>
-        </p>
-    </footer>
+  </div>
+
+  <!-- Slideshow Gallery -->
+  <div class="section">
+    <h2>📸 Memories Together</h2>
+    <div id="slideshow">
+      <img src="naina1.jpg" alt="Naina Picture 1">
+    </div>
+  </div>
+
+  <!-- Word Puzzle -->
+  <div class="section">
+    <h2>🔤 Word Puzzle: Unscramble the Names 🔤</h2>
+    <div id="puzzle"></div>
+    <h3 id="score">Score: 0 / 9</h3>
+    <h2 id="congrats" style="color:green; display:none;">🎉 You solved all names! 🎉</h2>
+    <button id="restart" style="display:none; padding:10px; margin-top:20px; border-radius:8px; background:#333; color:#fff;">
+      🔄 Restart Game
+    </button>
+  </div>
+
+  <!-- Q&A Section -->
+  <div class="section">
+    <h2>❓ Questions for Naina ❓</h2>
+    <div id="qaPuzzle"></div>
+    <h3 id="qaScore">Score: 0 / 4</h3>
+    <h2 id="qaCongrats" style="color:purple; display:none;">💜 You answered all questions! 💜</h2>
+  </div>
+
+  <!-- Celebration -->
+  <div id="celebration">
+    🎊 Congratulations Naina! 🎊 <br>
+    You completed the entire Birthday Challenge! 💖
+    <div class="balloon" style="left:20%; background:pink;"></div>
+    <div class="balloon" style="left:40%; background:blue;"></div>
+    <div class="balloon" style="left:60%; background:purple;"></div>
+    <div class="balloon" style="left:80%; background:yellow;"></div>
+  </div>
+
+  <!-- Music -->
+  <audio id="birthdayMusic" loop>
+    <source src="happybirthday.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+  <div style="margin-top:20px;">
+    <button onclick="toggleMusic()" style="padding:10px; border-radius:8px; background:#ff69b4; color:white; font-weight:bold;">
+      🎵 Start / Pause Music
+    </button>
+  </div>
+
+<script>
+  // Slideshow
+  const images = ["naina1.jpg","naina2.jpg","naina3.jpg","naina4.jpg"];
+  let currentIndex = 0;
+  function showNextImage() {
+    const slideshow = document.getElementById("slideshow");
+    currentIndex = (currentIndex + 1) % images.length;
+    slideshow.innerHTML = `<img src="${images[currentIndex]}" alt="Naina Picture ${currentIndex+1}">`;
+  }
+  setInterval(showNextImage, 3000);
+
+  // Word Puzzle
+  const words = ["NAINU","GIDDU","BACHA","SONU","SUNNU","BABA","BUBU","POMO","PAGLI"];
+  let score = 0, puzzleComplete = false, qaComplete = false;
+  function startGame() {
+    score = 0; puzzleComplete = false;
+    document.getElementById("score").textContent = `Score: 0 / ${words.length}`;
+    document.getElementById("congrats").style.display = "none";
+    document.getElementById("restart").style.display = "none";
+    const puzzleDiv = document.getElementById("puzzle");
+    puzzleDiv.innerHTML = "";
+    const jumbled = words.map(word => word.split('').sort(() => Math.random() - 0.5).join(''));
+    jumbled.forEach((jumble, index) => {
+      const container = document.createElement("div");
+      const question = document.createElement("p");
+      question.textContent = `Jumbled: ${jumble}`;
+      const input = document.createElement("input");
+      input.placeholder = "Your answer";
+      const feedback = document.createElement("p");
+      const button = document.createElement("button");
+      button.textContent = "Check";
+      button.onclick = () => {
+        if (input.value.toUpperCase() === words[index]) {
+          feedback.style.color = "green";
+          feedback.textContent = "✅ Correct! " + words[index];
+          score++;
+          document.getElementById("score").textContent = `Score: ${score} / ${words.length}`;
+          button.disabled = true;
+          if (score === words.length) {
+            document.getElementById("congrats").style.display = "block";
+            document.getElementById("restart").style.display = "inline-block";
+            puzzleComplete = true; checkCelebration();
+          }
+        } else {
+          feedback.style.color = "red";
+          feedback.textContent = "❌ Wrong! Correct answer: " + words[index];
+          button.disabled = true;
+        }
+      };
+      container.appendChild(question); container.appendChild(input);
+      container.appendChild(button); container.appendChild(feedback);
+      puzzleDiv.appendChild(container);
+    });
+  }
+  document.getElementById("restart").onclick = startGame;
+  startGame();
+
+  // Q&A
+  const questions = [
+    { q: "Where did we first laughed together?", a: "Engineering Workshop" },
+    { q: "Which color scarf did Naina wear on first physical meet together", a: "Yellow" },
+    { q: "Who always calls Naina 'Giddu'?", a: "Thaher" },
+    { q: "What is the nature love Naina likes more?", a: "Rain" }
+  ];
+  let qaScore = 0;
+  function startQA() {
+    qaScore = 0; qaComplete = false;
+    const scoreDisplay = document.getElementById("qaScore");
+    scoreDisplay.style.color = "black";
+    scoreDisplay.textContent = `Score: 0 / ${questions.length}`;
+    document.getElementById("qaCongrats").style.display = "none";
+    const qaPuzzleDiv = document.getElementById("qaPuzzle");
+    qaPuzzleDiv.innerHTML = "";
+    questions.forEach((question, index) => {
+      const container = document.createElement("div");
+      const q = document.createElement("p");
+      q.textContent = `${index + 1}. ${question.q}`;
+      const input = document.createElement("input");
+      input.placeholder = "Your answer";
+      const feedback = document.createElement("p");
+      const button = document.createElement("button");
+      button.textContent = "Submit";
+      button.onclick = () => {
+        if (input.value.toLowerCase() === question.a.toLowerCase()) {
+          feedback.style.color = "green";
+          feedback.textContent = "✅ Correct! " + question.a;
+          qaScore++;
+          scoreDisplay.textContent = `Score: ${qaScore} / ${questions.length}`;
+          button.disabled = true;
+          if (qaScore === questions.length) {
+            document.getElementById("qaCongrats").style.display = "block";
+            qaComplete = true; checkCelebration();
+          }
+        } else {
+          feedback.style.color = "red";
+          feedback.textContent = "❌ Wrong! Correct answer: " + question.a;
+          button.disabled = true;
+        }
+      };
+      container.appendChild(q); container.appendChild(input);
+      container.appendChild(button); container.appendChild(feedback);
+      qaPuzzleDiv.appendChild(container);
+    });
+  }
+  startQA();
+
+  function checkCelebration() {
+    if (puzzleComplete && qaComplete) {
+      document.getElementById("celebration").style.display = "block";
+    }
+  }
+
+  function toggleMusic() {
+    const music = document.getElementById("birthdayMusic");
+    if (music.paused) {
+      music.play();
+    } else {
+      music.pause();
+    }
+  }
+</script>
 </body>
 </html>
